@@ -4,18 +4,17 @@ public class K5 extends Car {
     private static String name = "K5";
     private static final int distancePerLiter = 13;
 
+    public K5(int tripDistance) {
+        super(tripDistance);
+    }
+
     @Override
     double getDistancePerLiter() {
         return distancePerLiter;
     }
 
     @Override
-    double getTripDistance() {
-        return 0;
-    }
-
-    @Override
-    String getName() {
+    public String getName() {
         return name;
     }
 }
